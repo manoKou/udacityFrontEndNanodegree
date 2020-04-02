@@ -1,0 +1,26 @@
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  Styles for the footer part that is used to every page.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+.footer{
+  grid-area: footer;
+  background: linear-gradient(to right, #070707, transparent);
+}
+
+.footer-text{
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  color: white;
+  padding: 20px;
+}
+
+@media screen and (max-width:800px){
+  .footer-text{
+    font-size: 16px;
+  }
+}

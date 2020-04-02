@@ -1,0 +1,141 @@
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  Styles for the first part of each page.
+  This includes the big title with the social icons at the top.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-cont{
+  text-align: center;
+  font-size: 0;
+  margin: 0 auto;
+  padding: 30px 30px 0 30px;
+  background-color: rgba(195,195,195,0.7);
+  background: linear-gradient(45deg, black, transparent);
+}
+
+.main-wrap{
+  padding: 5px 5px 0 5px;
+  display:grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto 1fr auto auto;
+  grid-template-areas:
+  "pre pre pre pre"
+  "header header header header"
+  "main main main ."
+  ". main2 main2 main2"
+  "footer footer footer footer";
+}
+
+@media screen and (max-width: 800px){
+  .main-cont{
+    padding: 10px 10px 0 10px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .main-wrap{
+    padding: 0;
+  }
+}
+
+.pre-cont{
+  background-color: rgba(240,240,240,0.3);
+  min-height: 50vh;
+  grid-area: pre;
+}
+
+.pre-text-cont{
+  display: flex;
+  padding: 25% 0px;
+  position: relative;
+}
+
+.pre-header{
+  font-size: 50px;
+  margin: 0 auto;
+  font-family: 'Lobster', cursive;
+  color: white;
+  display: inline-block;
+}
+
+.pre-sideline1{
+  font-size: 20px;
+  font-family: 'Lobster', cursive;
+  color: white;
+  transform: rotate(-90deg) translateX(-50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform-origin: 0% 0%;
+}
+
+.pre-sideline2{
+  font-size: 20px;
+  font-family: 'Lobster', cursive;
+  color: white;
+  transform: rotate(90deg) translateX(50%);
+  transform-origin: 100% 100%;
+  position: absolute;
+  top: 50%;
+  right: 26px;
+}
+
+@media screen and (max-width: 800px){
+  .main-cont{
+    padding: 10px 10px 0 10px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .pre-cont{
+    min-height: 30vh;
+  }
+  .pre-text-cont{
+    padding: 40% 0px;
+  }
+  .pre-header{
+    font-size: 30px;
+  }
+  .pre-sideline1{
+    font-size: 16px;
+  }
+  .pre-sideline2{
+    font-size: 16px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 300px){
+  .pre-sideline1{
+    display: none;
+  }
+  .pre-sideline2{
+    display: none;
+  }
+}
+
+.sideline-text{
+  align-self: flex-end;
+}
+
+.pre-social-cont{
+  width: 100%;
+  text-align: left;
+}
+
+.fab{
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+}
