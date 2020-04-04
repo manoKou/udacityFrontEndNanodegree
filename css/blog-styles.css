@@ -18,6 +18,14 @@
 @import "footer-styles.css";
 @import "template.css";
 
+.pre-cont-1{
+  background-image: url("https://images.unsplash.com/photo-1571740173801-7bed35d83de7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1313&q=80");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .post-article-cont1, .post2-article-cont1{
   grid-area: main;
   background-color: rgba(255,255,255,0.6);
@@ -101,4 +109,35 @@
   font-size: 20px;
   padding: 0 10px 10px 10px;
   text-align: left;
+}
+
+.underline-text{
+  text-decoration: underline;
+}
+
+.post1-cont2{
+  display:grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+  "head head head head"
+  "par1 par1 par1 par1"
+  "par2 par2 par2 par2"
+  "par3 par3 par3 par3"
+}
+
+.post1-head{
+  grid-area: head;
+}
+
+.post1-par1{
+  grid-area: par1;
+}
+
+.post1-par2{
+  grid-area: par2;
+}
+
+.post1-par3{
+  grid-area: par3;
 }

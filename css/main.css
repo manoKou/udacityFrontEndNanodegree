@@ -17,6 +17,11 @@
 @import "navbar-styles.css";
 @import "footer-styles.css";
 
+.fig-text{
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
 .blog-preview-cont{
   grid-area: main;
   position: relative;
@@ -177,4 +182,20 @@
   right: 0;
   transform: rotate(-20deg);
   transform-origin: 100% 100%;
+}
+
+.butt{
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 10px;
+  margin: 5px;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+.butt:hover{
+  cursor: pointer;
+  color: white;
+  background-color: black;
 }

@@ -69,6 +69,14 @@
   display: inline-block;
 }
 
+.pre-header1{
+  font-size: 60px;
+  margin: 0 auto;
+  font-family: 'Lobster', cursive;
+  display: inline-block;
+  color: rgba(40,40,180,0.8);
+}
+
 .pre-sideline1{
   font-size: 20px;
   font-family: 'Lobster', cursive;
